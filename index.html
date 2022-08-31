@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="icons-1.8.1/font/bootstrap-icons.css">
+
+    </head>
+    <body>
+        <nav class="navbar-expand-lg bg-sil">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="img-bar d-flex">
+                    <a class="navbar-brand" href="#">
+                      <img src="img/weather1.png" alt="">
+                   </a>
+                      <a class="pt-3 img-text" href="#">
+                          <p>weather </p>
+                          <span >tagline goes here</span>
+                      </a>
+                </div>
+              <div class="collapse navbar-collapse flex-grow-0 px-5">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class=" active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="" href="#">Live Cameras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+       <div class="Weather-section">
+            <div class="bg-img">
+                    <div class="container location">
+                      <form class="locaction-form">
+                          <input type="text" class="search-location" placeholder="Find your location..." id="searchInput">
+                          <input type="button" class="btn-seach" value="Find" id="submit">
+                      </form>
+                    </div>            
+            </div>
+           
+            <div class="bg-color">
+              <div class="container three-col w-75">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <div class="card h-100" id="card1">
+                      <div class="head p-2 d-flex justify-content-between">
+                        <small id="firstDay"></small>
+                        <small id="firstDate"></small>
+                      </div>
+                      <div class="body-card p-2">
+                        <p class="text-muted h-auto" id="city"></p>
+                        <div class="temperature d-flex justify-content-between text-white p-2">
+                          <p><span id="temp1"></span><sup>o</sup>C</p>
+                          <img width="50" class="statusImg">
+                        </div>
+                        <p class="co-blue status">Sunny</p>
+                        <div class="footer-card px-2 pb-4 text-muted">
+                          <span><img src="img/weather4.png" alt=""> <span id="humidity"></span></span>
+                          <span><img src="img/weather5.png" alt=""> <span id="speed"></span> km/h</span>
+                          <span><img src="img/weather6.png" alt=""> <span id="direction"></span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col-md-4">
+                    <div class="card h-100 d-flex" id="card2">
+                      <div class="head p-2 d-flex justify-content-center">
+                        <small id="secondDay"></small>
+                      </div>
+                      <div class="body-card p-2 d-flex flex-wrap justify-content-center text-center align-content-center h-100">
+                        <div class="col-12">
+                          <img width="50" class="statusImg">
+                        </div>
+                        <p class="text-white col-12 temperature"><span id="temp2"></span><sup>o</sup>C</p>
+                        <p class="co-blue col-12 status"></p>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col-md-4">
+                    <div class="card h-100" id="card3">
+                      <div class="head p-2 d-flex justify-content-center">
+                        <small id="thirdDay"></small>
+                      </div>
+                      <div class="body-card p-2 d-flex flex-wrap justify-content-center text-center align-content-center h-100">
+                        <div class="col-12">
+                          <img width="50" class="statusImg">
+                        </div>
+                        <p class="text-white col-12 temperature"><span id="temp3"></span><sup>o</sup>C</p>
+                        <p class="co-blue col-12 status"></p>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+       </div>
+
+       <div class="footer">
+         <div class="container">
+           <div class="row">
+             <div class="col-md-8">
+               <div class="subscribe">
+                 <form action="#" class="position-relative">
+                   <input type="text" class="search-location" id="emailInput" placeholder="Enter your email to subscribe...">
+                   <input type="submit" class="btn-seach" id="btnSub" value="subscribe">
+                 </form>
+               </div>
+             </div>
+             <div class="col-md-4">
+             <div class="social-link d-flex justify-content-end align-items-center pt-2">
+                 <div href="#"><a class="bi bi-facebook"></a></div>
+                 <div href="#"><a class="bi bi-twitter"></a></div>
+                 <div href="#"><a class="bi bi-google"></a></div>
+                 <div href="#"><a class="bi bi-pinterest"></a></div>
+             </div>
+             </div>
+           </div>
+           <div class="last">
+             <p class="text-white-50">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+           </div>
+         </div>
+       </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
